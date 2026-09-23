@@ -1,11 +1,13 @@
-import Logo from "/images/logo.jpg";
+import Home from "./pages/Home"
 
 function App() {
 
   return (
-     <div>
-         
-     </div>
+    <div>
+         <section className="flex items-center justify-center">
+              <Home/>
+         </section>
+    </div>
   )
 }
 
