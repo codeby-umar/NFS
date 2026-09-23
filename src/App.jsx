@@ -1,11 +1,11 @@
-
+import Logo from "/images/logo.jpg";
 
 function App() {
 
   return (
-    <>
-       Hello App
-    </>
+     <div>
+         
+     </div>
   )
 }
 
