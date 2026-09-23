@@ -2,10 +2,9 @@
 
 
 
-.container{
-    max-width: 700px;
-    height: 100%;
+.images{
+    background-image: url('./assets/images/backgrounds.png');
+    background-repeat: no-repeat;
+    background-size: cover;
     width: 100%;
-    margin: 0 auto;
-    padding: 0px 20px;
 }
