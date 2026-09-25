@@ -1,5 +1,7 @@
 import logo from "../assets/images/logo.jpg";
 import banner from "../assets/images/banner.png";
+import { SlArrowRight } from "react-icons/sl";
+
 
 import {
   FaTelegramPlane,
@@ -175,12 +177,53 @@ function Home() {
               <span className="font-medium">{social.name}</span>
 
               <span className="ml-auto text-gray-500 transition-transform duration-300 group-hover:translate-x-1 group-hover:text-[#D9A441]">
-                →
+                <SlArrowRight className="text-[#D9A441]" />
               </span>
             </a>
           ))}
         </div>
-        <a
+        <div className="mt-7 overflow-hidden bg-[#17191A]">
+          <div className="h-35 w-full">
+            <iframe
+              title="Location"
+              src="https://www.google.com/maps?q=Andijan,Uzbekistan&output=embed"
+              className="h-full w-full border-0"
+              loading="lazy"
+              allowFullScreen
+            />
+          </div>
+
+          <div className="flex items-center justify-between gap-4 p-5">
+            <div>
+              <p className="text-xs uppercase tracking-wider text-gray-500">
+                Location
+              </p>
+
+              <h3 className="mt-1 font-semibold text-white">
+                Andijan, Uzbekistan
+              </h3>
+            </div>
+
+            <a
+              href="https://www.google.com/maps/search/?api=1&query=Andijan,Uzbekistan"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="
+        shrink-0
+        bg-[#D9A441]
+        px-4 py-3
+        text-sm font-semibold
+        text-white
+        transition-all duration-300
+        hover:bg-[#E4B653]
+        hover:-translate-y-0.5
+      "
+            >
+              Open Map
+            </a>
+          </div>
+        </div>
+        {/* <a
           href="https://codebyumar.vercel.app/"
           className="
             mt-6
@@ -196,10 +239,7 @@ function Home() {
         >
           <FaDownload />
           Download CV
-        </a>
-        <div className="mt-8 text-center">
-          <p className="text-xs text-gray-600">Coders : Muhammad Umar</p>
-        </div>
+        </a> */}
       </section>
     </main>
   );
