@@ -11,11 +11,17 @@ import {
   FaPhone,
   FaEnvelope,
   FaGlobe,
-  FaDownload,
+  FaWhatsapp ,
+  FaFacebook ,
 } from "react-icons/fa";
 
 function Home() {
   const socialLinks = [
+    {
+      name: "WhatsApp",
+      icon: <FaWhatsapp/>,
+      link: "https://wa.me/+998507121208",
+    },
     {
       name: "Telegram",
       icon: <FaTelegramPlane />,
@@ -27,6 +33,11 @@ function Home() {
       link: "https://www.instagram.com/codeby.umar",
     },
     {
+      name: "Facebook",
+      icon: <FaFacebook/>,
+      link: "https://www.facebook.com/profile.php?id=61581646061708",
+    },
+    {
       name: "GitHub",
       icon: <FaGithub />,
       link: "https://github.com/codeby-umar",
@@ -34,7 +45,7 @@ function Home() {
     {
       name: "LinkedIn",
       icon: <FaLinkedinIn />,
-      link: "#",
+      link: "https://www.linkedin.com/in/muhammad-umar-undefined-a91313403/",
     },
     {
       name: "Portfolio",
@@ -115,8 +126,8 @@ function Home() {
                   whitespace-nowrap
     "
           >
-            <FaPhone className="shrink-0" />
-            <span className="truncate">Call Me</span>
+            <FaPhone className="shrink-0 text-lg text-white" />
+            <span className="truncate text-[16px] text-white">Call Me</span>
           </a>
 
           <a
@@ -133,8 +144,8 @@ function Home() {
                 whitespace-nowrap
              "
           >
-            <FaEnvelope className="shrink-0" />
-            <span className="truncate">Email Me</span>
+            <FaEnvelope className="shrink-0 text-lg" />
+            <span className="truncate text-[16px]">Email Me</span>
           </a>
         </div>
 
@@ -167,8 +178,7 @@ function Home() {
                   text-xl
                   text-[#D9A441]
                   transition-all duration-300
-                  group-hover:bg-[#D9A441]
-                  group-hover:text-black
+                  group-hover:text-green-500
                 "
               >
                 {social.icon}
@@ -177,7 +187,7 @@ function Home() {
               <span className="font-medium">{social.name}</span>
 
               <span className="ml-auto text-gray-500 transition-transform duration-300 group-hover:translate-x-1 group-hover:text-[#D9A441]">
-                <SlArrowRight className="text-[#D9A441]" />
+                <SlArrowRight className="text-[#D9A441] group-hover:text-green-500" />
               </span>
             </a>
           ))}
