@@ -1,4 +1,5 @@
 import logo from "../assets/images/logo.jpg";
+import banner from "../assets/images/banner.png";
 
 import {
   FaTelegramPlane,
@@ -34,7 +35,7 @@ function Home() {
       link: "#",
     },
     {
-      name: "Website",
+      name: "Portfolio",
       icon: <FaGlobe />,
       link: "https://codebyumar.vercel.app/",
     },
@@ -55,25 +56,35 @@ function Home() {
           sm:p-8
         "
       >
-        <div className="flex flex-col items-center pt-2">
-          <div className="relative">
-            <div className="absolute -inset-1 rounded-full bg-[#D9A441]/30 blur-md" />
+        <div className="relative h-44 w-full sm:h-52">
+          <img
+            src={banner}
+            alt="Profile banner"
+            className="h-full w-full object-cover"
+          />
+          <div className="absolute inset-0 bg-linear-to-b from-transparent via-transparent to-[#101112]/90" />
+        </div>
 
-            <img
-              className="
-                relative
-                h-28 w-28
-                rounded-full
-                border-4 border-[#D9A441]
-                object-cover
-                sm:h-36 sm:w-36
-              "
-              src={logo}
-              alt="Turg'unboyov Muhammad Umar"
-            />
+        <div className="relative flex flex-col items-center px-5 pb-6 sm:px-8">
+          <div className="-mt-16 relative z-10 sm:-mt-20">
+            <div className="rounded-full bg-[#101112] p-2">
+              <img
+                className="
+            h-30
+            rounded-full
+            object-cover
+            sm:h-36 sm:w-36
+          "
+                src={logo}
+                alt="Turg'unboyov Muhammad Umar"
+              />
+            </div>
           </div>
 
-          <h1 className="mt-5 text-center text-2xl font-bold tracking-tight sm:text-3xl">
+          <h1
+            className="mt-5 max-w-[320px] text-center text-2xl font-bold leading-tight tracking-[-0.02em]  sm:max-w-105 sm:text-3xl
+  "
+          >
             Turg'unboyov Muhammad Umar
           </h1>
 
@@ -87,7 +98,7 @@ function Home() {
           </p>
         </div>
 
-        <div className="mt-7 flex w-full gap-3">
+        <div className="mt-5 flex w-full gap-3">
           <a
             href="tel:+998507121208"
             className="
@@ -170,7 +181,7 @@ function Home() {
           ))}
         </div>
         <a
-          href="#"
+          href="https://codebyumar.vercel.app/"
           className="
             mt-6
             flex items-center justify-center gap-3
