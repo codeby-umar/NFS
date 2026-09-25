@@ -1,5 +1,5 @@
 import logo from "../assets/images/logo.jpg";
-import banner from "../assets/images/banner.png";
+import banner from "../assets/images/photes.png";
 import { SlArrowRight } from "react-icons/sl";
 
 
